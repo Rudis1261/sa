@@ -36,8 +36,11 @@ a {
 }
 
 .container {
-    width: 100%;
+    display: block;
     margin: 0 15px 15px;
+    z-index: 1;
+    position: relative
+    ;
     @include respond-from($viewport-lg) {
         max-width: $viewport-lg;
         margin: 0 auto 15px;

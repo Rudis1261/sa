@@ -30,7 +30,6 @@
       margin-bottom: 0;
       position: relative;
       padding-bottom: 100px;
-      overflow: hidden;
 
       .inner {
         display: flex;
@@ -44,8 +43,9 @@
       &:after {
         bottom: 0;
         z-index: 1;
+        left: 50%;
         position: absolute;
-        min-width: 200%;
+        min-width: 120%;
         height: 120px;
         background: $secondary;
         content: "";
