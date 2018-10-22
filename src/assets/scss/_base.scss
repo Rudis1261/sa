@@ -1,0 +1,13 @@
+
+body,
+html {
+    background: $secondary;
+    font-size: $font-size;
+}
+
+* {
+    font-family: 'Montserrat', 'Helvetica', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $primary;
+}

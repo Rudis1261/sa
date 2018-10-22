@@ -1,0 +1,57 @@
+a {
+    opacity: 0.8;
+    text-decoration: none;
+    position: relative;
+
+    &.animated { 
+        &:after {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            background: $tertiary;
+            left: 0;
+            width: 0;
+            content: '';
+            transition: all 300ms;
+        }
+
+        &:hover,
+        &.router-link-exact-active {
+            opacity: 1;
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+
+    &.primary {
+        color: $secondary;
+    }
+
+    & + a {
+        margin: {
+            left: 15px; 
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 15px 15px;
+    @include respond-from($viewport-lg) {
+        max-width: $viewport-lg;
+        margin: 0 auto 15px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
