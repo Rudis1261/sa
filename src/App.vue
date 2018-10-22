@@ -30,6 +30,7 @@
       margin-bottom: 0;
       position: relative;
       padding-bottom: 100px;
+      overflow: hidden;
 
       .inner {
         display: flex;
